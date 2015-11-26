@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate,
+class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate,UITextFieldDelegate {
 
     @IBOutlet weak var imagePickerView: UIImageView!
@@ -123,6 +123,7 @@ UINavigationControllerDelegate,UITextFieldDelegate {
             self.textBottom.text = "Bottom"
             self.imageView.image = nil
             self.activityButton.enabled = false
+            self.dismissViewControllerAnimated(true, completion: nil)
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
