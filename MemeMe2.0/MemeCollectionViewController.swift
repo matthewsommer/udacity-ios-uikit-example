@@ -17,8 +17,8 @@ class MemeCollectionViewController : UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.hidden = false
-        let space: CGFloat = 3.0
-        let dimension = (self.view.frame.size.width - (2 * space)) / 3.0
+        let space: CGFloat = 1.0
+        let dimension = (self.view.frame.size.width - (2 * space)) / 2
         
         flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
@@ -56,7 +56,7 @@ class MemeCollectionViewController : UICollectionViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            var destination = segue.destinationViewController as! MemeDetailViewController
+            let destination = segue.destinationViewController as! MemeDetailViewController
             destination.meme = memes[selectedIndex!]
         }
     }
