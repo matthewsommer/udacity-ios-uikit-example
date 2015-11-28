@@ -29,7 +29,7 @@ class MemeDetailViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "memeEditor" {
-            var destination = segue.destinationViewController as! MemeEditorViewController
+            let destination = segue.destinationViewController as! MemeEditorViewController
             destination.meme = meme!
         }
     }

@@ -12,11 +12,11 @@ class MemeTableViewController: UITableViewController {
 
     var memes: [Meme]!
     var selectedIndex: Int?
-    
+    let applicationDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
-        let applicationDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         memes = applicationDelegate.memes
         tableView.reloadData()
     }
@@ -55,10 +55,8 @@ class MemeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
-            let object = UIApplication.sharedApplication().delegate
-            let appDelegate = object as! AppDelegate
-            appDelegate.memes.removeAtIndex(indexPath.row)
-            memes = appDelegate.memes
+            applicationDelegate.memes.removeAtIndex(indexPath.row)
+            memes = applicationDelegate.memes
             tableView.reloadData()
         }
     }
