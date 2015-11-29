@@ -25,27 +25,22 @@ UINavigationControllerDelegate,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
+        
         if(meme != nil){
-            textTop.text = meme.textTop
-            textBottom.text = meme.textBottom
+            prepareTextField(textTop, defaultText: meme.textTop!)
+            prepareTextField(textBottom, defaultText: meme.textBottom!)
             imageView.image = meme.originalImage
         }
         else {
-            textTop.text = "TOP"
-            textBottom.text = "BOTTOM"
+            prepareTextField(textTop, defaultText: "TOP")
+            prepareTextField(textBottom, defaultText: "BOTTOM")
             activityButton.enabled = false
         }
-        
-        textTop.textAlignment = .Center
-        textBottom.textAlignment = .Center
-        
-        textBottom.defaultTextAttributes = memeTextAttributes
-        textTop.defaultTextAttributes = memeTextAttributes
     }
     
     override func viewWillAppear(animated: Bool) {
-        cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
         super.viewWillAppear(animated)
+        cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
         subscribeToKeyboardNotifications()
         
         textTop.delegate = self
@@ -108,7 +103,7 @@ UINavigationControllerDelegate,UITextFieldDelegate {
     
     func keyboardWillShow(notification: NSNotification) {
         if textBottom.isFirstResponder(){
-            view.frame.origin.y -= getKeyboardHeight(notification)
+            view.frame.origin.y = -getKeyboardHeight(notification)
         }
     }
     
@@ -180,6 +175,12 @@ UINavigationControllerDelegate,UITextFieldDelegate {
     private func showToolbars() {
         navToolbar.hidden = false
         photoBar.hidden = false
+    }
+    
+    func prepareTextField (textfield: UITextField, defaultText: String) {
+        textfield.text = defaultText
+        textfield.textAlignment = .Center
+        textfield.defaultTextAttributes = memeTextAttributes
     }
     
     let memeTextAttributes = [

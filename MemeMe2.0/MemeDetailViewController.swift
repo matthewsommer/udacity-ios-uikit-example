@@ -15,7 +15,7 @@ class MemeDetailViewController: UIViewController {
     var selectedIndex: Int?
     
     override func viewDidLoad() {
-        self.tabBarController?.tabBar.hidden = true
+        tabBarController?.tabBar.hidden = true
     }
     
     override func viewWillAppear(animated: Bool) {

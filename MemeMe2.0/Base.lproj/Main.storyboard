@@ -24,7 +24,7 @@
                                     <navigationItem title="Title" id="VV8-Cg-GLy"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-yD-wu6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-yD-wu6">
                                 <rect key="frame" x="20" y="64" width="560" height="487"/>
                                 <animations/>
                             </imageView>
@@ -393,6 +393,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BXg-ir-u2S"/>
-        <segue reference="KI5-bS-gYF"/>
+        <segue reference="uwc-6w-cyZ"/>
     </inferredMetricsTieBreakers>
 </document>
