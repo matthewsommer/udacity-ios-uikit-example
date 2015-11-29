@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C90C5D8D1BD7923900364060 /* Table.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90C5D8C1BD7923900364060 /* Table.xcassets */; };
 		C90C5D8F1BD793DD00364060 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90C5D8E1BD793DD00364060 /* Launch Screen.storyboard */; };
-		C90C5D911BD7950D00364060 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C90C5D901BD7950D00364060 /* LaunchImage.png */; };
 		C92E00371BBB468B0071F5C0 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E00361BBB468B0071F5C0 /* Meme.swift */; };
 		C94126731C07F73C004FC7EE /* MemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94126721C07F73C004FC7EE /* MemeCollectionViewCell.swift */; };
 		C94126751C093338004FC7EE /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94126741C093338004FC7EE /* MemeTableViewController.swift */; };
@@ -20,6 +19,7 @@
 		C95B4D061BBA420600DE1B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95B4D041BBA420600DE1B10 /* Main.storyboard */; };
 		C95B4D161BBA420600DE1B10 /* MemeMe2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B4D151BBA420600DE1B10 /* MemeMe2_0Tests.swift */; };
 		C95B4D211BBA420600DE1B10 /* MemeMe2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B4D201BBA420600DE1B10 /* MemeMe2_0UITests.swift */; };
+		C98D4CDD1C0ACF4A00539697 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C98D4CDC1C0ACF4A00539697 /* LaunchImage.png */; };
 		C9C5E0071BD4BDF800E5B628 /* MemeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5E0061BD4BDF800E5B628 /* MemeCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,6 @@
 /* Begin PBXFileReference section */
 		C90C5D8C1BD7923900364060 /* Table.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Table.xcassets; sourceTree = "<group>"; };
 		C90C5D8E1BD793DD00364060 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
-		C90C5D901BD7950D00364060 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage.png; path = ../../../Downloads/MemeMe_assets/LaunchImage.png; sourceTree = "<group>"; };
 		C92E00361BBB468B0071F5C0 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		C94126721C07F73C004FC7EE /* MemeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		C94126741C093338004FC7EE /* MemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		C95B4D1C1BBA420600DE1B10 /* MemeMe2.0.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMe2.0.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95B4D201BBA420600DE1B10 /* MemeMe2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMe2_0UITests.swift; sourceTree = "<group>"; };
 		C95B4D221BBA420600DE1B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98D4CDC1C0ACF4A00539697 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage.png; path = MemeMe2.0/Assets/LaunchImage.png; sourceTree = "<group>"; };
 		C9C5E0061BD4BDF800E5B628 /* MemeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 		C95B4CF41BBA420600DE1B10 = {
 			isa = PBXGroup;
 			children = (
-				C90C5D901BD7950D00364060 /* LaunchImage.png */,
+				C98D4CDC1C0ACF4A00539697 /* LaunchImage.png */,
 				C95B4CFF1BBA420600DE1B10 /* MemeMe2.0 */,
 				C95B4D141BBA420600DE1B10 /* MemeMe2.0Tests */,
 				C95B4D1F1BBA420600DE1B10 /* MemeMe2.0UITests */,
@@ -250,7 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90C5D911BD7950D00364060 /* LaunchImage.png in Resources */,
+				C98D4CDD1C0ACF4A00539697 /* LaunchImage.png in Resources */,
 				C90C5D8F1BD793DD00364060 /* Launch Screen.storyboard in Resources */,
 				C90C5D8D1BD7923900364060 /* Table.xcassets in Resources */,
 				C95B4D061BBA420600DE1B10 /* Main.storyboard in Resources */,
